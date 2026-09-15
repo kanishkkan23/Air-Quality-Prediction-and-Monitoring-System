@@ -1,14 +1,9 @@
 {
-  "builds": [
+  "redirects": [
     {
-      "src": "app.py",
-      "use": "@vercel/python"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "app.py"
+      "source": "/(.*)",
+      "destination": "https://streamlit.app",
+      "permanent": true
     }
   ]
 }
